@@ -1,64 +1,73 @@
-# Hi, I'm Lucas! | Full Stack Developer & Cloud Architect ☁️
+# Lucas Rios — Senior .NET & Cloud Engineer
 
-I am a senior-level **Full Stack Developer** with over 14 years of experience, specializing in the **.NET/C#** ecosystem and **AWS Cloud Infrastructure**. My expertise lies in bridging the gap between high-performance software development and scalable cloud architecture.
+**14+ years** building production systems in **.NET/C#** and **AWS** — from multi-tenant SaaS platforms to distributed event-driven architectures.
 
-### 🎯 Professional Focus
-* **Scalable SaaS:** 8+ years architecting multi-tenant solutions and microservices.
-* **Cloud Optimization:** AWS Specialist (Certified Cloud Practitioner) with a track record of reducing infrastructure costs by up to **40%**.
-* **Data & Performance:** Expert in SQL Server performance tuning, reducing system instability by over **50%**.
-* **AI Integration:** Building intelligent agents using OpenAI for sentiment analysis, natural language processing, and automation.
+Currently focused on: serverless messaging systems, AWS Lambda pipelines, SQL Server performance at scale, and AI integration in backend services.
 
----
-
-## 🛠 Tech Stack & Expertise
-
-| Category | Technologies |
-| :--- | :--- |
-| **Backend** | .NET 8/6, C#, Node.js, REST APIs, Microservices |
-| **Cloud (AWS)** | Lambda, EC2, SQS, SNS, VPC, S3, IAM, CloudWatch |
-| **Database** | SQL Server (T-SQL Performance), Firebird, MySQL, Entity Framework |
-| **Frontend** | HTML5, CSS3, JavaScript, Google Charts, AmCharts, Maps API |
-| **AI & NLP** | OpenAI API, Whisper (Audio-to-Text), Sentiment Analysis, LLM Agents |
-| **DevOps & Tools** | CI/CD, Lean Startup, Agile, Git, Puppeteer |
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-cunha-rios/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:lucas.trr@hotmail.com)
+![AWS](https://img.shields.io/badge/AWS-Certified%20Cloud%20Practitioner-orange?style=flat-square&logo=amazonaws)
 
 ---
 
-## 🏗 Key Projects & Ecosystems
+## Featured Project
 
-### 📱 [SW WhatsApp Cloud Ecosystem](https://github.com/LucasRios/SWWhatsAppCloudEcosystem)
-A robust, serverless messaging solution for corporate environments using Meta's Official API.
-* **Architecture:** Microservices/Serverless (Lambda + SQS + SQL Server).
-* **Features:** Multi-tenant credentials broker, inbound/outbound processors, and callback systems.
+### [WhatsApp AWS Ecosystem](https://github.com/LucasRios/WhatsApp-AWS-Ecosystem)
 
-### ⚙️ [SQL Server Performance & CLR Toolkit](https://github.com/LucasRios/SQLServerDLL-Procedure-Assincrona)
-A collection of advanced tools for DBAs and Developers to extend SQL Server capabilities.
-* **SQLServerAPI:** Perform HTTP requests directly from T-SQL.
-* **SQLProcedureAsincrona:** Asynchronous command execution via CLR.
-* **PerformanceToolkit:** Diagnostic scripts for CPU, indexing, and fragmentation.
+Distributed WhatsApp messaging platform built on **AWS Lambda + SQS** — handles inbound webhook reception, credential management, multi-stage delivery, and full audit trail in SQL Server.
 
-### 🤖 [AI & Automation Labs](https://github.com/LucasRios/SQLServerDLL-OpenAITraduzirAudio)
-* **OpenAI Audio Transcriber:** Direct SQL-to-Whisper integration.
-* **EC2 Auto-Scaling Scripts:** Python-based Lambda functions for cost-saving automation.
+```
+Meta API → LambdaSQSReceiver → SQS → LambdaGetMetaCredentials
+        → SQS → LambdaSQSEnvio → LambdaSQSEnvioPostAPI → Meta API
+                               → LambdaSQSEnvioSalvaRetorno → LambdaSQLWriter → RDS
+```
+
+6 independent Lambda functions, each with its own SQS trigger, DLQ, and IAM least-privilege policy.
+Stage isolation means any function can fail, retry, and recover without cascading.
 
 ---
 
-## 📈 Impact in Numbers
-* **-40%** reduction in monthly AWS costs through Savings Plans and architecture optimization.
-* **-50%** reduction in database performance bottlenecks through advanced indexing and query tuning.
-* **99.9%** service availability for high-volume conversational B2B platforms.
+## Repositories
+
+| Repo | What's inside |
+|---|---|
+| [WhatsApp-AWS-Ecosystem](https://github.com/LucasRios/WhatsApp-AWS-Ecosystem) | Distributed serverless messaging system — Lambda, SQS, Meta API, RDS |
+| [AWS-Examples](https://github.com/LucasRios/AWS-Examples) | Lambda automation, EC2 lifecycle management, Security Group auto-update, Bedrock |
+| [SQLServer-Examples](https://github.com/LucasRios/SQLServer-Examples) | CLR extensions, async procedures, HTTP calls from T-SQL, DBA performance scripts |
+| [AI-Examples](https://github.com/LucasRios/AI-Examples) | OpenAI, Whisper, AWS Bedrock, generative pipelines, AI inside SQL Server |
+| [DotNet-Utilities](https://github.com/LucasRios/DotNet-Utilities) | PDF generation, Base64 encoding, file processing utilities in .NET 8 |
+| [Learning-Lab](https://github.com/LucasRios/Learning-Lab) | Structured notes and experiments — AWS, DevOps, AI, Data Science |
 
 ---
 
-## 🎓 Background & Certifications
-* **M.Sc. in Intelligence Technology and Digital Design** (PUC-SP)
-* **AWS Certified Cloud Practitioner**
-* Expertise in **Lean Startup** & **Technical Product Management**
+## Tech Stack
+
+| Area | Technologies |
+|---|---|
+| **Backend** | .NET 8 / C#, Node.js, REST APIs, Microservices |
+| **AWS** | Lambda, SQS, EC2, S3, IAM, Secrets Manager, CloudWatch, Bedrock |
+| **Database** | SQL Server (T-SQL, CLR, performance tuning), Firebird, MySQL, Entity Framework |
+| **AI** | OpenAI GPT, Whisper, AWS Bedrock, LLM integration, prompt engineering |
+| **Frontend** | HTML5, CSS3, JavaScript, Google Charts, Maps API |
+| **DevOps** | CI/CD, Git, Agile, Lean Startup |
 
 ---
 
-## 📫 Connect with me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-cunha-rios/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lucas.trr@hotmail.com)
+## Impact
+
+- **−40%** monthly AWS cost reduction through Savings Plans and architecture optimization
+- **−50%** reduction in SQL Server performance bottlenecks through indexing and query tuning
+- **99.9%** availability on high-volume B2B conversational platforms
+- **8+ years** architecting multi-tenant SaaS with microservices
 
 ---
-*“Turning complex business requirements into resilient, cost-effective cloud solutions.”*
+
+## Background
+
+- **M.Sc. in Intelligence Technology and Digital Design** — PUC-SP
+- **AWS Certified Cloud Practitioner**
+- Expertise in Lean Startup and Technical Product Management
+
+---
+
+*Turning complex business requirements into resilient, cost-effective cloud solutions.*
