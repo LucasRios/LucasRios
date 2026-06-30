@@ -32,11 +32,14 @@ Stage isolation means any function can fail, retry, and recover without cascadin
 | Repo | What's inside |
 |---|---|
 | [WhatsApp-AWS-Ecosystem](https://github.com/LucasRios/WhatsApp-AWS-Ecosystem) | Distributed serverless messaging system — Lambda, SQS, Meta API, RDS |
-| [AWS-Examples](https://github.com/LucasRios/AWS-Examples) | Lambda automation, EC2 lifecycle management, Security Group auto-update, Bedrock |
+| [AWS-Examples](https://github.com/LucasRios/AWS-Examples) | Lambda automation, EC2 lifecycle management, Security Group auto-update, Bedrock, email capture pipeline |
 | [SQLServer-Examples](https://github.com/LucasRios/SQLServer-Examples) | CLR extensions, async procedures, HTTP calls from T-SQL, DBA performance scripts |
 | [AI-Examples](https://github.com/LucasRios/AI-Examples) | OpenAI, Whisper, AWS Bedrock, generative pipelines, AI inside SQL Server |
-| [DotNet-Utilities](https://github.com/LucasRios/DotNet-Utilities) | PDF generation, Base64 encoding, file processing utilities in .NET 8 |
+| [DotNet-Utilities](https://github.com/LucasRios/DotNet-Utilities) | .NET console tools — AES-256 encryption, NF-e XML importer, system monitor, PowerPoint generator, Telegram bot, PDF/Base64 utilities |
 | [Learning-Lab](https://github.com/LucasRios/Learning-Lab) | Structured notes and experiments — AWS, DevOps, AI, Data Science |
+| [GestaoMax](https://github.com/LucasRios/GestaoMax) | Shared SQL utilities and GeoJSON assets for the GestaoMax multi-tenant SaaS platform |
+| [Mapas](https://github.com/LucasRios/Mapas) | GeoJSON dataset of all 5,570 Brazilian municipalities — ready for Leaflet, Mapbox, Google Charts |
+| [FIAP](https://github.com/LucasRios/FIAP) | Academic coursework — M.Sc. in Intelligence Technology and Digital Design (PUC-SP / FIAP) |
 
 ---
 
